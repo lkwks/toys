@@ -63,7 +63,8 @@
   <script>
     const data = {'WA':`워싱턴`};
     document.getElementById("usmap").addEventListener("mouseover", (event)=>{
-    alert(event.target);
+      if (event.target.id !== "usmap")
+        alert(event.target.id);
     });
     document.getElementById("details").innerHTML = data['WA'];  
   </script>
