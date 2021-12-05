@@ -1,5 +1,5 @@
 <style>
-  div { border:1px solid black; height:20px; width:20px; }
+  div { border:1px solid black; height:20px; width:20px; position:absolute; }
 </style>
 
 <body>
@@ -7,11 +7,12 @@
     &nbsp;
   </div>
 
-  <div style=width:100px;height:500px;position:fixed;right:0px;bottom:0px; id=details>
+  <div style=width:200px;height:500px;position:fixed;right:0px;bottom:0px; id=details>
     &nbsp;
+    <div style=left:10px;top:10px; id=WA>&nbsp;</div>
   </div>
   
   <script>
-    const data = {WA:`워싱턴`};
-    document.getElementById("details").innerHTML = data.WA;  
+    const data = {'WA':`워싱턴`};
+    document.getElementById("details").innerHTML = data['WA'];  
   </script>
