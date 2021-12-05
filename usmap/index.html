@@ -25,7 +25,7 @@
     <div style=left:557px;top:164px; id=IA>&nbsp;</div>
     <div style=left:569px;top:246px; id=MO>&nbsp;</div>
     <div style=left:618px;top:103px; id=WI>&nbsp;</div>
-    <div style=left:630px;top:208px; id=IA>&nbsp;</div>
+    <div style=left:630px;top:208px; id=IL>&nbsp;</div>
     <div style=left:709px;top:138px; id=MI>&nbsp;</div>
     <div style=left:685px;top:210px; id=IN>&nbsp;</div>
     <div style=left:737px;top:202px; id=OH>&nbsp;</div>
@@ -61,10 +61,62 @@
   </div>
   
   <script>
-    const data = {'WA':`워싱턴`};
+    const data = {
+      'AK':``,
+      'HI':``,
+      'WA':``,
+      'OR':``,
+      'CA':``,
+      'NV':``,
+      'ID':``,
+      'UT':``,
+      'AZ':``,
+      'MT':``,
+      'WY':``,
+      'CO':``,
+      'NM':``,
+      'ND':``,
+      'SD':``,
+      'NE':``,
+      'KS':``,
+      'MN':``,
+      'IA':``,
+      'MO':``,
+      'WI':``,
+      'IL':``,
+      'MI':``,
+      'IN':``,
+      'OH':``,
+      'TX':``,
+      'OK':``,
+      'AR':``,
+      'LA':``,
+      'KY':``,
+      'TN':``,
+      'MS':``,
+      'AL':``,
+      'FL':``,
+      'GA':``,
+      'SC':``,
+      'NC':``,
+      'VA':``,
+      'WV':``,
+      'MD':``,
+      'DE':``,
+      'NJ':``,
+      'PA':``,
+      'NY':``,
+      'CT':``,
+      'MA':``,
+      'RI':``,
+      'VT':``,
+      'NH':``,
+      'ME':``
+    };
+    
+    
     document.getElementById("usmap").addEventListener("mouseover", (event)=>{
       if (event.target.id !== "usmap")
-        alert(event.target.id);
+        document.getElementById("details").innerHTML = data[event.target.id];  
     });
-    document.getElementById("details").innerHTML = data['WA'];  
   </script>
