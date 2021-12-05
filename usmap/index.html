@@ -3,13 +3,14 @@
 </style>
 
 <body>
-  <script>
-    const data = {WA:`워싱턴`};
-    
-  </script>
   <div style=background-image:url(./usa.png);width:1047px;height:618px;position:relative;>
     &nbsp;
-    <script>
-      document.write(data.WA);
-    </script>
   </div>
+
+  <div style=width:100px;height:500px;position:fixed;right:0px;bottom:0px; id=details>
+  </div>
+  
+  <script>
+    const data = {WA:`워싱턴`};
+    document.getElementById("details").innerHTML = data.WA;  
+  </script>
